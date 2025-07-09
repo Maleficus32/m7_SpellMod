@@ -20,21 +20,18 @@ Function Menu(Bool abMenu = True, Int aiButton = 0)
 			aiButton = MM1.Show() ; Main Menu
 			abMenu = False ; End the function
 			If aiButton == 0
-				Target.SetRelationshipRank(PlayerRef, 4)
-				IllusPos.Play(Target, 2)
-			ElseIf aiButton == 1
 				Target.SetRelationshipRank(PlayerRef, 3)
 				IllusPos.Play(Target, 2)
-			ElseIf aiButton == 2
+			ElseIf aiButton == 1
 				Target.SetRelationshipRank(PlayerRef, 2)
 				IllusPos.Play(Target, 2)
-			ElseIf aiButton == 3
+			ElseIf aiButton == 2
 				Target.SetRelationshipRank(PlayerRef, 1)
 				IllusPos.Play(Target, 2)
-			ElseIf aiButton == 4
+			ElseIf aiButton == 3
 				Target.SetRelationshipRank(PlayerRef, 0)
 				IllusPos.Play(Target, 2)
-			ElseIf aiButton == 5
+			ElseIf aiButton == 4
 				aiButton = MM2.Show()
 					If aiButton == 0
 						aiButton = MM1.Show()
